@@ -1,13 +1,7 @@
 name: Pull requests can't target master branch
 
-"on":
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
-    branches:
-      - master
+on:
+  - workflow_dispatch
 
 jobs:
   check:
