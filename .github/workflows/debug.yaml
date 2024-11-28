@@ -8,5 +8,12 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+
+      - name: Setup editor Neovim
+        run: |
+          apt udpate -y
+          wget https://github.com/neovim/neovim-releases/releases/download/v0.10.2/nvim-linux64.deb
+          sudo dpkg -i nvim-linux64.deb
+
       - name: Set up tmate session
         uses: mxschmitt/action-tmate@v3
