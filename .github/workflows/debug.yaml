@@ -11,7 +11,7 @@ jobs:
 
       - name: Setup editor Neovim
         run: |
-          apt udpate -y
+          sudo apt update -y
           wget https://github.com/neovim/neovim-releases/releases/download/v0.10.2/nvim-linux64.deb
           sudo dpkg -i nvim-linux64.deb
 
